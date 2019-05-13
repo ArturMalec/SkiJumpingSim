@@ -1,10 +1,3 @@
-/*
- * ski.h
- *
- *  Created on: 22 mar 2019
- *      Author: Malcini
- */
-
 #ifndef SKI_H_
 #define SKI_H_
 #include <iostream>
