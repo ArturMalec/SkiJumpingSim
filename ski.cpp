@@ -1,9 +1,3 @@
-/*
- * ski.cpp
- *
- *  Created on: 22 mar 2019
- *      Author: Malcini
- */
 #include "ski.h"
 
 Jumper::Jumper(std::string na, std::string n, unsigned short a, int dis, int no, float pts, float s)
