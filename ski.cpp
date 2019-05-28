@@ -45,7 +45,7 @@ int Jumper::jump()
 		std::cout << ". ";
 	}
 	distance = ((std::rand() % 83) + 170);
-	std::cout << "\nOdleglosc: "<< distance << " m." << std::endl;
+	std::cout << "\nDistance: "<< distance << " m." << std::endl;
 	return distance;
 }
 
@@ -59,7 +59,7 @@ int Jumper::notes()
 		judge[i] = ((std::rand() % 4) + 16);
 		notess += judge[i];
 	}
-	std::cout << "Noty sedziowskie: " << std::endl;
+	std::cout << "Judges notes: " << std::endl;
 	for (int i = 0; i < 3; i++)
 	{
 		std::cout << i + 1 << ": "<< judge[i] << std::endl;
