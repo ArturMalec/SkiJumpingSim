@@ -18,7 +18,7 @@ int main()
 	float res[N], res2[N], final[N];
 
 	// -------------------------------------------------------
-	std::cout << "ZAWODNICY: \n";
+	std::cout << "CONTESTANTS: \n";
 	Jumper one("Kamil Stoch", "POL", 31, 0, 0, 0.0, 0.0);
 	Jumper two("Stefan Kraft", "AUT", 25, 0, 0, 0.0, 0.0);
 	Jumper three("Daiki Ito", "JPN", 33, 0, 0, 0.0, 0.0);
@@ -32,7 +32,7 @@ int main()
 	{
 		if (choice1 < 1 || choice1 > 2)
 		{
-			std::cerr << "Niepoprawny wybor. Sproboj jeszcze raz.\n";
+			std::cerr << "Bad choice. Try again.\n";
 			std::cout << ">> ";
 			continue;
 		}
@@ -69,7 +69,7 @@ int main()
 	{
 		if (choice2 < 1 || choice2 > 3)
 		{
-			std::cerr << "Niepoprawny wybor. Sproboj jeszcze raz.\n";
+			std::cerr << "Bad choice. Try again.\n";
 			std::cout << ">> ";
 			continue;
 		}
@@ -115,7 +115,7 @@ int main()
 	{
 		if (choice1 < 1 || choice1 > 2)
 		{
-			std::cerr << "Niepoprawny wybor. Sproboj jeszcze raz.\n";
+			std::cerr << "Bad choice. Try again.\n";
 			std::cout << ">> ";
 			continue;
 		}
@@ -153,7 +153,7 @@ void timetonext()
 	for (int i = 5; i > 0; --i)
 	{
 		system("cls");
-		std::cout << "Kolejny zawodnik za: " << i;
+		std::cout << "Next contestant for: " << i;
 		Sleep(1000);
 	}
 }
@@ -171,24 +171,24 @@ void classification(std::multimap<float, std::string> mm)
 
 void menu1()
 {
-	std::cout << "1 <- Rozpocznij pierwsza serie\n";
-	std::cout << "2 <- Zakoncz\n";
+	std::cout << "1 <- Start first series\n";
+	std::cout << "2 <- End\n";
 	std::cout << ">> ";
 }
 
 void menu2()
 {
 	system("cls");
-	std::cout << "1 <- Rozpocznij druga serie\n";
-	std::cout << "2 <- Zobacz klasyfikacje\n";
-	std::cout << "3 <- Zakoncz\n";
+	std::cout << "1 <- Start second series\n";
+	std::cout << "2 <- Show classification\n";
+	std::cout << "3 <- End\n";
 	std::cout << ">> ";
 }
 
 void menu3()
 {
-	std::cout << "1 <- Zobacz finalowa klasyfikacje\n";
-	std::cout << "2 <- Zakoncz\n";
+	std::cout << "1 <- Show final classification\n";
+	std::cout << "2 <- End\n";
 	std::cout << ">> ";
 }
 
